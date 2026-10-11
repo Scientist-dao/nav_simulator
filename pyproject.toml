@@ -1,0 +1,20 @@
+[project]
+name = "navsim-workspace"
+version = "0.1.0"
+description = "AGV 农田视觉导航仿真器 (nav_simulator)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy>=1.26",
+    "opencv-python>=4.9",
+    "pybind11>=2.12",
+]
+
+[tool.uv]
+# 本目录是"应用工作区"而非可安装的 Python 包:
+# uv 只管理依赖与 .venv, 不把 nav_simulator 构建安装成包
+package = false
+
+# ── 国内网络慢时启用清华 PyPI 镜像 (取消下面三行注释) ──
+# [[tool.uv.index]]
+# url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+# default = true

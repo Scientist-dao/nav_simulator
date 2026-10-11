@@ -1,0 +1,60 @@
+{
+  "simulation": {
+    "fps": 15.0,
+    "speed_ms": 1.0,
+    "strip_width_px": 30,
+    "noise_probability": 0.0,
+    "z_near": 0.5,
+    "z_far": 20.0,
+    "x_range": 3.0,
+    "initial_offset_m": 0.0,
+    "initial_heading_deg": 0.0,
+    "test_mode": true,
+    "nav_debug": false,
+    "max_frames": 0
+  },
+  "sensors": {
+    "mode": 2,
+    "attitude_in_projection": false,
+    "bump_intensity": 1.0,
+    "seed": null,
+    "imu": {
+      "enabled": false,
+      "roll_noise_std_deg": 0.15,
+      "pitch_noise_std_deg": 0.15,
+      "bias_roll_deg": 0.0,
+      "bias_pitch_deg": 0.0
+    },
+    "rtk": {
+      "enabled": false,
+      "rate_hz": 50.0,
+      "position_noise_std_m": 0.02,
+      "heading_noise_std_deg": 0.5,
+      "speed_noise_std_ms": 0.05,
+      "pos_status": 4,
+      "drop_rate": 0.0,
+      "origin_lat_deg": 30.0,
+      "origin_lon_deg": 120.0,
+      "origin_alt_m": 10.0
+    }
+  },
+  "vehicle": {
+    "wheelbase_length": 2.7,
+    "wheelbase_width": 1.72,
+    "max_steering_angle": 0.6,
+    "max_steering_rate": 0.3
+  },
+  "field": {
+    "num_rows": 3,
+    "row_spacing_m": 0.65,
+    "row_length_m": 200.0,
+    "row_width_m": 0.12,
+    "row_shape": "straight",
+    "class_id": 0
+  },
+  "visualization": {
+    "show_dashboard": true,
+    "show_top_view": true,
+    "window_scale": 1.0
+  }
+}

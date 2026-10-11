@@ -1,0 +1,18 @@
+# 白名单式忽略: 本仓库只跟踪仿真器主体与入口文件, 其余一律不入库
+/*
+!.gitignore
+!README.md
+!.python-version
+!pyproject.toml
+!uv.lock
+!navsim.py
+!navsim.cmd
+!nav_simulator/
+!models/
+
+# 生成物
+__pycache__/
+*.pyc
+
+# 系统
+.DS_Store
